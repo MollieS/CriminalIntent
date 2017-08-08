@@ -20,4 +20,13 @@ class CrimeFragmentTest {
 
         crimeFragment.crime shouldNotBe null
     }
+
+    @Test
+    fun getsTitleFieldFromView() {
+        val crimeFragment: CrimeFragment = CrimeFragment()
+
+        startFragment(crimeFragment)
+
+        crimeFragment.titleField shouldNotBe null
+    }
 }

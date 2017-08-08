@@ -5,8 +5,9 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 
-class CrimeFragment : Fragment() {
+class CrimeFragment(var titleField: EditText? = null) : Fragment() {
 
     lateinit var crime: Crime
 
@@ -20,6 +21,7 @@ class CrimeFragment : Fragment() {
         var view: View? = null
         if (inflater is LayoutInflater) {
             view = inflater.inflate(R.layout.fragment_crime, container, false)
+            titleField = view.findViewById(R.id.crime_title)
         }
         return view
     }
