@@ -4,7 +4,7 @@ import android.text.Editable
 import android.text.TextWatcher
 
 
-class TitleTextWatcher(val crime: Crime) : TextWatcher {
+class TitleTextWatcher(private val crime: Crime) : TextWatcher {
     override fun afterTextChanged(s: Editable?) {
     }
 

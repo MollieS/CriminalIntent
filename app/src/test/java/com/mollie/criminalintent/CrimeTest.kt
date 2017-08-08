@@ -8,13 +8,13 @@ import io.kotlintest.specs.StringSpec
 class CrimeTest : StringSpec() {
     init {
         "it has an id" {
-            val crime: Crime = Crime()
+            val crime = Crime()
 
             crime.id shouldNotBe null
         }
 
         "it can have a title" {
-            val crime: Crime = Crime()
+            val crime = Crime()
 
             crime.title = "title"
 

@@ -18,7 +18,7 @@ class CrimeFragmentTest {
 
     @Test
     fun createsACrimeOnCreate() {
-        val crimeFragment: CrimeFragment = CrimeFragment()
+        val crimeFragment = CrimeFragment()
 
         startFragment(crimeFragment)
 
@@ -27,7 +27,7 @@ class CrimeFragmentTest {
 
     @Test
     fun getsTitleFieldFromView() {
-        val crimeFragment: CrimeFragment = CrimeFragment()
+        val crimeFragment = CrimeFragment()
 
         startFragment(crimeFragment)
 
@@ -37,7 +37,7 @@ class CrimeFragmentTest {
     @Test
     fun setsTextChangedListenerOnTitleField() {
         val editTextSpy = EditTextSpy(RuntimeEnvironment.application)
-        val crimeFragment: CrimeFragment = CrimeFragment(editTextSpy)
+        val crimeFragment = CrimeFragment(editTextSpy)
 
         startFragment(crimeFragment)
 
