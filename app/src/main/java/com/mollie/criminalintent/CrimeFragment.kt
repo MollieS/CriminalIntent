@@ -21,8 +21,12 @@ class CrimeFragment(var titleField: EditText? = null) : Fragment() {
         var view: View? = null
         if (inflater is LayoutInflater) {
             view = inflater.inflate(R.layout.fragment_crime, container, false)
-            titleField = view.findViewById(R.id.crime_title)
+            if(titleField == null) {
+                titleField = view.findViewById(R.id.crime_title)
+            }
+            titleField?.addTextChangedListener(null)
         }
         return view
     }
+
 }
