@@ -12,7 +12,6 @@ import android.text.TextWatcher
 import io.kotlintest.matchers.shouldBe
 import org.robolectric.RuntimeEnvironment
 
-
 @RunWith(RobolectricTestRunner::class)
 @Config(constants = BuildConfig::class)
 class CrimeFragmentTest {

@@ -24,9 +24,8 @@ class CrimeFragment(var titleField: EditText? = null) : Fragment() {
             if(titleField == null) {
                 titleField = view.findViewById(R.id.crime_title)
             }
-            titleField?.addTextChangedListener(null)
+            titleField?.addTextChangedListener(TitleTextWatcher(crime))
         }
         return view
     }
-
 }
