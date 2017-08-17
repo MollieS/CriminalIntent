@@ -38,7 +38,7 @@ class CrimeListFragment : Fragment() {
 
         override fun onBindViewHolder(holder: CrimeHolder?, position: Int) {
             val crime: Crime = crimes[position]
-            holder?.titleView?.text = crime.date.toString()
+            holder?.titleView?.text = crime.title
         }
 
         override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): CrimeHolder {

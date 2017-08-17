@@ -17,6 +17,7 @@ object CrimeLab {
         val listOfCrimes = mutableListOf<Crime>()
         for (i in 1..100) {
             val crime = Crime()
+            crime.title = "Crime #$i"
             if (i.rem(2) == 0) {
                 crime.solve()
             }
