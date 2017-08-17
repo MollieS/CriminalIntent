@@ -6,19 +6,21 @@ import io.kotlintest.specs.StringSpec
 
 
 class CrimeTest : StringSpec() {
+    private val crime = Crime()
+
     init {
         "it has an id" {
-            val crime = Crime()
-
             crime.id shouldNotBe null
         }
 
         "it can have a title" {
-            val crime = Crime()
-
             crime.title = "title"
 
             crime.title shouldBe "title"
+        }
+
+        "it has a date" {
+            crime.date shouldNotBe null
         }
     }
 }
