@@ -1,4 +1,4 @@
-package com.mollie.criminalintent
+package com.mollie.criminalIntent
 
 import android.content.*
 import android.widget.EditText
@@ -9,6 +9,8 @@ import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 import org.robolectric.shadows.support.v4.SupportFragmentTestUtil.startFragment
 import android.text.TextWatcher
+import com.mollie.criminalintent.BuildConfig
+import com.mollie.criminalintent.CrimeFragment
 import io.kotlintest.matchers.shouldBe
 import org.robolectric.RuntimeEnvironment
 

@@ -22,6 +22,16 @@ class CrimeTest : StringSpec() {
         "it has a date" {
             crime.date shouldNotBe null
         }
+
+        "it can be unsolved" {
+            crime.solved shouldBe false
+        }
+
+        "it can be solved" {
+            crime.solve()
+
+            crime.solved shouldBe true
+        }
     }
 }
 
