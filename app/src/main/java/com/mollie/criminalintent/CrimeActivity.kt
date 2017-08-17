@@ -9,7 +9,7 @@ class CrimeActivity : FragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crime)
+        setContentView(R.layout.activity_fragment)
 
         val fragmentManager: FragmentManager = supportFragmentManager
         var fragment: Fragment? = fragmentManager.findFragmentById(R.id.fragment_container)
